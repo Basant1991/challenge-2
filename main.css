@@ -1,0 +1,141 @@
+/*font-family: 'Red Hat Display', sans-serif;*/
+/*Global rules*/
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-color: var(--paleBlue);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+}
+@media (max-width: 767px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-position-y: -25%;
+  }
+}
+
+.card {
+  width: 350px;
+  height: 575px;
+  background-color: white;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.card .shape {
+  background-image: url(../images/illustration-hero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+}
+.card .container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+}
+.summary {
+}
+.summary h2 {
+  font-size: 22px;
+  font-weight: 900;
+}
+.summary p {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--Desaturatedblue);
+}
+.container .annualPlan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0e8ff6b;
+  padding: 15px 30px;
+  width: 8fit-content;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container .annualPlan .plan {
+  margin-right: 30px;
+}
+.container .annualPlan img {
+  margin-right: 10px;
+}
+.container .annualPlan h4 {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+.container .annualPlan p {
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+  color: var(--Desaturatedblue);
+}
+.chan {
+  font-size: 15px;
+}
+.card .buttons {
+  position: absolute;
+  top: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card .buttons .press {
+  background-color: var(--brightBlue);
+  color: white;
+  text-decoration: none;
+  width: 80%;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 15px 30px;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px var(--Darkblue);
+}
+.card .buttons .cancel {
+  text-decoration: none;
+  color: var(--Desaturatedblue);
+  font-weight: bold;
+  margin-top: 5px;
+}
